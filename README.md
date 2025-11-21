@@ -24,7 +24,7 @@ Le projet est **entièrement conteneurisé avec Docker** et comporte trois servi
 2. **db** : base de données MySQL contenant les adjectifs et noms.
 3. **admin** : interface Adminer pour gérer la base de données.
 ![alt text](imageReadme/Auth.png)
-![alt text](imageReadme/BDD-1.png)
+![alt text](imageReadme/BDD.png)
 
 ## Prérequis
 - Docker & Docker Compose (v2.x recommandé)

@@ -14,7 +14,7 @@
 
 
 ## Présentation
-Ce projet permet de générer **aléatoirement des noms de groupes de musique en anglais** suivant le schéma : "The {adjectif} {nom}
+Ce projet permet de générer **aléatoirement des noms de groupes de musique** suivant le schéma : "The {adjectif} {nom}
 
 Le projet est **entièrement conteneurisé avec Docker** et comporte trois services :
 
@@ -22,24 +22,25 @@ Le projet est **entièrement conteneurisé avec Docker** et comporte trois servi
 ![alt text](imageReadme/BNG.png)
 
 2. **db** : base de données MySQL contenant les adjectifs et noms.
-3. **admin** : interface Adminer pour gérer la base de données.
 ![alt text](imageReadme/Auth.png)
+
+3. **admin** : interface Adminer pour gérer la base de données.
 ![alt text](imageReadme/BDD.png)
 
 ## Prérequis
 - Docker & Docker Compose (v2.x recommandé)
-- (optionnel) accès réseau sur les ports 8085 (web) et 8086 (adminer)
+- Accès réseau sur les ports 8085 (web) et 8086 (adminer)
 
 
 ## Installation / lancement (environnement développement)
-1. Cloner ou récupérer le projet et placer-vous dans le dossier racine contenant `docker-compose.yaml`.
+1. Cloner ou récupérer le projet et se placer vous dans le dossier racine contenant `docker-compose.yaml`.
 
 2. Copier le fichier d’environnement :
 ```cmd
 copy .env.dist .env
 ```
 
-3. Lancer le projet avec docker Compose
+3. Lancer le projet avec Docker Compose :
 
 ```
 docker compose up --build
@@ -93,9 +94,9 @@ Lors du passage développement → production, plusieurs éléments peuvent chan
 [Adminer](https://www.adminer.org/)
 
 ## Remarque
-* Ce projet à été développer en utilisant Visual Studio code, ainsi que l'invite de commande windows
+* Ce projet a été développer en utilisant Visual Studio code, ainsi que l'invite de commande windows
 * difficulté rencontrées :
-Docker n'est pas mon outils de prédisposition, j'ai donc rencontré des problème avec :
+Docker n'est pas mon outil de prédilection, j'ai donc rencontré des problème avec :
     * Installation de mysql-connector-python sur Docker Desktop Windows → remplacé par mysql-connector pour éviter les erreurs de compilation.
     * Gestion des chemins relatifs et de la syntaxe EOF pour CMD.
 

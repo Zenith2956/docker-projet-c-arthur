@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Band Names Generator</title>
+</head>
+<body>
+  <h1>Band Names Generator</h1>
+
+  <form method="post" style="margin-bottom: 1.2rem;">
+    <button type="submit" name="action" value="check">Vérifier la connexion à la base de données</button>
+    <button type="submit" name="action" value="generate">Générer 10 noms</button>
+  </form>
+
+  {% if message %}
+    <p><strong>{{ message }}</strong></p>
+  {% endif %}
+
+  {% if bandnames %}
+    <h2>Résultats</h2>
+    <ol>
+      {% for name in bandnames %}
+        <li>{{ name }}</li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+</body>
+</html>
